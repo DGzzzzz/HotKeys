@@ -16,6 +16,22 @@ Source: https://github.com/DGzzzzz/HotKeys.git
 
 3. Após instalação, iniciei o arquivo SpotifyHotKey.ahk com o programa AutoHotKeys
 
+# Comandos parametrizados no script
+1. Aumentar volume: 
+CTRL + seta Up
+
+2. Diminuir volume: 
+CTRL + seta Down 
+
+3. Alternar o modo shuffle (aleatório): 
+F3
+
+4. Próxima faixa: 
+F5
+
+5. Faixa anterior: 
+F6
+
 # Instalação sem utilizar meu repositório
 1.0  Faça o download do programa AutoHotKeys no site oficial, precisa ser a versão 1.1.37.02
 
