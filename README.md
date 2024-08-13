@@ -6,17 +6,24 @@ Este script permite controlar o volume, shuffle, repetição e navegação de fa
 ## Requisitos
 
 - AutoHotkey v1.1
-- Spotify.ahk
+- Arquivo Spotify.ahk e pasta lib
 
 ## Instalação
-
-1. Baixe a biblioteca `Spotify.ahk` do repositório GitHub.
-Source: https://github.com/CloakerSmoker/Spotify.ahk
-ou
-Baixe a pasta Spotify no meu repositório GitHub.
+1. Faça o download do repositório e extraia a pasta Spotify em um local da sua escolha.
 Source: https://github.com/DGzzzzz/HotKeys.git
 
-2. Coloque o arquivo `Spotify.ahk` no mesmo diretório do seu script.
+2. Na pasta exe, faça instalação do AutoHotKeys v1.1
+
+3. Após instalação, iniciei o arquivo SpotifyHotKey.ahk com o programa AutoHotKeys
+
+# Instalação sem utilizar meu repositório
+1.0  Faça o download do programa AutoHotKeys no site oficial, precisa ser a versão 1.1.37.02
+
+1.1  Baixe a biblioteca `Spotify.ahk` do repositório GitHub.
+
+Source: https://github.com/CloakerSmoker/Spotify.ahk
+
+2. O arquivo `Spotify.ahk` e a pasta lib precisam estar no mesmo diretório do seu script.
 
 ## Uso
 
@@ -70,14 +77,14 @@ spoofy.Player.LastTrack()
 return
 
 
-## Explicação dos Componentes
-Inicialização:
+# Explicação dos Componentes
+### Inicialização:
 
 spoofy := new Spotify
 
 Cria uma nova instância da classe Spotify.
 
-## Obtenção de Informações de Reprodução:
+### Obtenção de Informações de Reprodução:
 
 PlaybackInfo := spoofy.Player.GetCurrentPlaybackInfo()
 VolumePercentage := PlaybackInfo.Device.Volume
@@ -86,7 +93,7 @@ RepeatMode := (PlaybackInfo.repeat_state = "context" ? 2 : PlaybackInfo.repeat_s
 
 Obtém informações sobre a reprodução atual, como volume, estado de shuffle e modo de repetição.
 
-## Atalhos de Teclado:
+### Atalhos de Teclado:
 Aumentar Volume:
 
 ^Up::
